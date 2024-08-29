@@ -49,6 +49,24 @@ body {
     text-decoration: none;
 }
 
+.resultados_img {
+    width: 20rem;
+    height: 10rem;
+    padding-block-end: 40px;
+}
+
+.container {
+    display:list-item;
+}
+
+.equipe_img {
+    padding-inline: 80px;
+    width: 20rem;
+    height: 10rem;
+}
+
+
+
 /* Responsivo: exibir o menu como hambúrguer em telas menores */
 @media (max-width: 768px) {
     .menu-toggle {
