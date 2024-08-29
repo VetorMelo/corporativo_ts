@@ -15,7 +15,7 @@ body {
     background-color: #333;
     color: #fff;
     position: fixed;
-    width: 98%;
+    width: 100%;
     top: 0;
     z-index: 1000;
 }
@@ -56,7 +56,7 @@ body {
 }
 
 .container {
-    display:list-item;
+    display: list-item;
 }
 
 .equipe_img {
@@ -65,26 +65,56 @@ body {
     height: 10rem;
 }
 
-
-
 /* Responsivo: exibir o menu como hambúrguer em telas menores */
 @media (max-width: 768px) {
-    .menu-toggle {
-        display: block; /* Mostrar o botão de menu */
+    .navbar {
+        padding: 10px;
     }
+
+    .menu-toggle {
+        display: block; 
+    }
+
     .nav-links {
-        display: none; /* Ocultar o menu por padrão */
+        display: none; 
         flex-direction: column;
         position: absolute;
-        top: 50px; /* Ajuste conforme necessário */
-        right: 20px; /* Ajuste conforme necessário */
+        top: 50px; 
+        right: 20px; 
         background-color: #333;
         width: 200px;
         border-radius: 8px;
+        z-index: 1001; /* Garantir que o menu fique acima de outros elementos */
     }
+
     .nav-links li {
         margin: 10px 0;
         text-align: center;
+    }
+
+    .nav-links.show {
+        display: flex; /* Mostrar o menu ao clicar no botão */
+    }
+
+    .resultados_img, .equipe_img {
+        width: 100%; 
+        height: auto; 
+        padding-block-end: 20px; 
+        padding-inline: 0; 
+    }
+
+    .container {
+        margin-top: 30px;
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        
+    }
+
+    button {
+        width: 100%; 
+        margin-top: 10px; /* Espaço entre os botões */
+        font-size: 1.2em; /* Aumenta o tamanho da fonte para melhor usabilidade em dispositivos móveis */
     }
 }
 
@@ -120,7 +150,7 @@ button:hover {
 /* Footer */
 .footer {
     text-align: center;
-    padding: 1px;
+    padding: 10px; /* Aumenta o padding para maior espaçamento em dispositivos móveis */
     background-color: #333;
     color: #fff;
     position: fixed;
