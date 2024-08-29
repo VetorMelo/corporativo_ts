@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporativo.Dev</title>
+    <link rel="stylesheet" href="./conteudo.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Corporativo.Dev</div>
+        <button class="menu-toggle" id="menuToggle">☰</button> <!-- Botão de menu -->
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#resultados">Resultados</a></li>
+            <li><a href="#equipes">Equipes</a></li>
+            <li><a href="#prioridades">Prioridades</a></li>
+            <li><a href="#demandas">Demandas</a></li>
+            <li><a href="#chamados">Chamados</a></li>
+            <li><a href="./index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
+                <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+              </svg></a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main class="main-content">
+        <section id="resultados">
+            <button onclick="mostrarResultado('Semana')">Resultado da Semana</button>
+            <button onclick="mostrarResultado('Mes')">Resultado do Mês</button>
+            <button onclick="mostrarResultado('Semestre')">Resultado do Semestre</button>
+        </section>
+        <section id="equipes">
+            <button onclick="mostrarEquipe('Equipe 1')">Equipe 1</button>
+            <button onclick="mostrarEquipe('Equipe 2')">Equipe 2</button>
+        </section>
+        <section id="prioridades">
+            <button onclick="mostrarPrioridade('Alta')">Alta Prioridade</button>
+            <button onclick="mostrarPrioridade('Media')">Média Prioridade</button>
+            <button onclick="mostrarPrioridade('Baixa')">Baixa Prioridade</button>
+        </section>
+        <section id="demandas">
+            <button onclick="mostrarInformacao('Demandas')">Demandas</button>
+        </section>
+        <section id="chamados">
+            <button onclick="mostrarInformacao('Chamados Abertos')">Chamados Abertos</button>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Desenvolvido por Victor Melo ®2024</p>
+    </footer>
+
+    <script src="./conteudo.js"></script>
+</body>
+</html>

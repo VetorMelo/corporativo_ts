@@ -1,0 +1,111 @@
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 98%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+}
+
+.menu-toggle {
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: none; /* Oculto por padrão para desktops */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Responsivo: exibir o menu como hambúrguer em telas menores */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Mostrar o botão de menu */
+    }
+    .nav-links {
+        display: none; /* Ocultar o menu por padrão */
+        flex-direction: column;
+        position: absolute;
+        top: 50px; /* Ajuste conforme necessário */
+        right: 20px; /* Ajuste conforme necessário */
+        background-color: #333;
+        width: 200px;
+        border-radius: 8px;
+    }
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+/* Conteúdo Principal */
+.main-content {
+    margin-top: 60px; /* Para evitar que o conteúdo fique atrás da navbar fixa */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.main-content section {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    background-color: #0056b3;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #003d80;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
